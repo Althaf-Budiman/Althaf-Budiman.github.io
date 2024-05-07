@@ -122,11 +122,11 @@ body {
 }
 
 .bg-blackGradient {
-    background-image: linear-gradient(to top right, #000000, #272933);
+    background: linear-gradient(to top right, #000000, #272933);
 }
 
 .bg-orangeGradient {
-    background-image: linear-gradient(to top right, #ffb700, #ff5c00);
+    background: linear-gradient(to top right, #ffb700, #ff5c00);
 }
 
 .border-white {
@@ -227,6 +227,10 @@ body {
     align-items: center;
     gap: 2.5rem;
     margin-top: 4rem;
+}
+
+.tab:hover {
+    background: linear-gradient(to top right, #ffb700, #ff5c00);
 }
 
 .tab {
