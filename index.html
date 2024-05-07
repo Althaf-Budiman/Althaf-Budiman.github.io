@@ -47,16 +47,16 @@
 
         <!-- tabs section -->
         <div class="tabs" id="tabs">
-            <div class="tab bg-orangeGradient border-white font-semibold rounded-more">Education</div>
-            <div class="tab border-white font-semibold rounded-more">Goals</div>
-            <div class="tab border-white font-semibold rounded-more">Interests</div>
+            <div class="tab bg-orangeGradient border-white font-semibold rounded-more" id="tab-education" onclick="changeTab('education')">Education</div>
+            <div class="tab border-white font-semibold rounded-more" id="tab-goals" onclick="changeTab('goals')">Goals</div>
+            <div class="tab border-white font-semibold rounded-more" id="tab-interests" onclick="changeTab('interests')">Interests</div>
         </div>
 
         <!-- tabs container section -->
         <div class="container-center">
-            <div class="tabs-container">
+            <div class="tabs-container" id="tabs-container">
                 <!-- education section -->
-                <div class="education-item">
+                <div class="tab-content education-item active">
                     <img width="90" src="assets/img/idn-logo.svg" style="filter: grayscale(100%)" />
                     <div class="divider"></div>
 
@@ -65,7 +65,7 @@
                         <p class="font-light">Junior High School | 2019 - 2022</p>
                     </div>
                 </div>
-                <div class="education-item">
+                <div class="tab-content education-item active">
                     <img width="90" src="assets/img/idn-logo.svg" />
                     <div class="divider"></div>
 
@@ -74,6 +74,12 @@
                         <p class="font-light">Vocational High School <span class="font-semibold">|</span> RPL <span class="font-semibold">|</span> 2022 - Now</p>
                     </div>
                 </div>
+
+                <!-- goals section -->
+                <div class="tab-content goals-item">goals-item</div>
+
+                <!-- interests section -->
+                <div class="tab-content interests-item">interests-item</div>
             </div>
         </div>
 

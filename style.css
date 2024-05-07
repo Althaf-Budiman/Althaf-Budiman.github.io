@@ -230,6 +230,7 @@ body {
 }
 
 .tab:hover {
+    cursor: pointer;
     background: linear-gradient(to top right, #ffb700, #ff5c00);
 }
 
@@ -241,6 +242,14 @@ body {
     font-size: 1.3rem;
 }
 
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: flex;
+}
+
 .container-center {
     display: flex;
     justify-content: center;
@@ -249,12 +258,11 @@ body {
 .tabs-container {
     display: flex;
     flex-direction: column;
-    margin-top: 7rem;
+    margin-top: 5.5rem;
     gap: 5rem;
 }
 
 .education-item {
-    display: flex;
     gap: 35px;
     color: white;
 }
