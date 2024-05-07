@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* for mobile and tablet */
+@media only screen and (max-width: 1023px) {
+    /* hero */
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 7rem;
+    }
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .hero img {
+        width: 18rem;
+    }
+
+    /* about */
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* tabs */
+    .tabs {
+        flex-direction: column;
+    }
+
+    /* skills */
+    .skills {
+        flex-direction: column;
+    }
+
+    .items-row,
+    .skills-item {
+        flex-wrap: wrap;
+    }
+
+    #skills-items .items-row:nth-child(1) {
+        margin-top: 4rem;
+    }
+
+    #skills-items .items-row:nth-child(2) {
+        margin-top: 2rem;
+        margin-left: -0px;
+    }
+
+    /* education item */
+    .education-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tabs-container {
+        align-items: center;
+    }
+
+    .divider {
+        width: 5.5rem;
+        height: 5px;
+    }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1024px) {
+    .hero {
+        height: 100vh;
+    }
+    .hero h1 {
+        font-size: 5rem;
+    }
+    .hero-buttons {
+        margin-left: 55px;
+    }
+
+    .hero img {
+        margin-top: 5rem;
+        width: 20rem;
+    }
+    /* skill */
+    #skills-items .items-row:nth-child(2) {
+        margin-top: 3rem;
+        margin-left: -60px;
+    }
+
+    /* education item */
+    .education-item {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .tabs-container {
+        align-items: start;
+    }
+
+    .divider {
+        width: 5px;
+        height: 5.5rem;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #44474f;
+}
+
+.color-orange {
+    color: #ffb700;
+}
+
+.bg-blackGradient {
+    background-image: linear-gradient(to top right, #000000, #272933);
+}
+
+.bg-orangeGradient {
+    background-image: linear-gradient(to top right, #ffb700, #ff5c00);
+}
+
+.border-white {
+    border: 2px solid white;
+}
+
+.rounded-regular {
+    border-radius: 8px;
+}
+
+.rounded-more {
+    border-radius: 20px;
+}
+
+.font-light {
+    font-weight: 100;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.box-shadow-regular {
+    box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.5); /* Bayangan hitam */
+}
+
+/* Hero Section */
+.hero {
+    color: white;
+    padding: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    padding: 5px;
+}
+
+.hero h1:nth-child(2) {
+    margin-left: 15px;
+}
+
+.hero h1:nth-child(3) {
+    margin-left: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 13px 30px 13px 30px;
+}
+
+/* About Section */
+
+.about {
+    margin: 2rem;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-card {
+    padding: 4rem 3rem 4rem 3rem;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+}
+
+.about p {
+    font-size: 1.5rem;
+}
+
+.about p:nth-child(3) {
+    margin-top: 1.5rem;
+    max-width: 40rem;
+    font-size: 1rem;
+}
+
+.about img {
+    width: 15rem;
+}
+
+/* tab button */
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+.tab {
+    padding: 9px 40px 9px 40px;
+    min-width: 182px;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.container-center {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    gap: 5rem;
+}
+
+.education-item {
+    display: flex;
+    gap: 35px;
+    color: white;
+}
+
+.education-item h3 {
+    font-weight: 500;
+}
+
+.divider {
+    background-color: #d9d9d9;
+    border-radius: 15px;
+}
+
+/* skills */
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    font-size: 1.4rem;
+    padding: 5rem;
+    color: white;
+}
+
+#skills-header {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills-header a {
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+    padding: 13px 30px 13px 30px;
+}
+
+#skills-items {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills-items .items-row {
+    display: flex;
+    gap: 2.4rem;
+}
+
+#skills-items .items-row img {
+    filter: grayscale(100%);
+    transition: filter 0.2s ease;
+}
+
+#skills-items .items-row img:hover {
+    filter: grayscale(0%);
+    transition: filter 0.2s ease;
+}
