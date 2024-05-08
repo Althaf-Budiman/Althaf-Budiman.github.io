@@ -114,7 +114,8 @@
 }
 
 body {
-    background-color: #44474f;
+    background-image: url(assets/img/denim.png);
+    background-attachment: fixed;
 }
 
 .color-orange {
