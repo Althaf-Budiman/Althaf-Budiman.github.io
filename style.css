@@ -17,7 +17,7 @@
         margin-left: 0px;
     }
     .hero img {
-        width: 18rem;
+        width: 20rem;
     }
 
     /* about */
@@ -71,8 +71,7 @@
     }
 
     .hero img {
-        margin-top: 5rem;
-        width: 20rem;
+        width: 28rem;
     }
 
     /* education item */
@@ -158,6 +157,7 @@ body {
 
 .hero h1 {
     padding: 5px;
+    font-size: 4.4rem;
 }
 
 .hero h1:nth-child(2) {
