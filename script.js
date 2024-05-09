@@ -12,9 +12,9 @@ function changeTab(tabName) {
 
     // Non-active all tabs
     tabs.forEach((tab) => {
-        tab.classList.remove('bg-orangeGradient')
+        tab.classList.remove('bg-orange')
     })
 
     // only active the tab we click
-    document.getElementById(`tab-${tabName}`).classList.add('bg-orangeGradient')
+    document.getElementById(`tab-${tabName}`).classList.add('bg-orange')
 }

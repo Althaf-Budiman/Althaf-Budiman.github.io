@@ -118,8 +118,16 @@ body {
     background-attachment: fixed;
 }
 
-.color-orange {
+.color-yellow {
     color: #ffb700;
+}
+
+.color-orange {
+    color: #ff5c00;
+}
+
+.bg-orange {
+    background-color: #ff5c00;
 }
 
 .bg-blackGradient {
@@ -232,7 +240,8 @@ body {
 
 .tab:hover {
     cursor: pointer;
-    background: linear-gradient(to top right, #ffb700, #ff5c00);
+    background-color: #ff5c00;
+    transition: all .2s;
 }
 
 .tab {
@@ -241,6 +250,7 @@ body {
     text-align: center;
     color: white;
     font-size: 1.3rem;
+    transition: all .2s;
 }
 
 .tab-content {
@@ -275,6 +285,30 @@ body {
 .divider {
     background-color: #d9d9d9;
     border-radius: 15px;
+}
+
+.goals-item, .interests-item {
+    background-color: #1b1c1e;
+    padding: 1.5rem;
+    color: white;
+    gap: 2.5rem;
+    max-width: 900px;
+}
+
+.goals-item h3, .interests-item h3 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.goals-item p, .interests-item p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.item-logo {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
 }
 
 /* skills */
