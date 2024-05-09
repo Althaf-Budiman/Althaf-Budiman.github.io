@@ -227,7 +227,7 @@ body {
 .tab:hover {
     cursor: pointer;
     background-color: #ff5c00;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
 .tab {
@@ -236,7 +236,7 @@ body {
     text-align: center;
     color: white;
     font-size: 1.3rem;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
 .tab-content {
@@ -273,7 +273,8 @@ body {
     border-radius: 15px;
 }
 
-.goals-item, .interests-item {
+.goals-item,
+.interests-item {
     background-color: #1b1c1e;
     padding: 1.5rem;
     color: white;
@@ -281,12 +282,14 @@ body {
     max-width: 900px;
 }
 
-.goals-item h3, .interests-item h3 {
+.goals-item h3,
+.interests-item h3 {
     font-weight: 600;
     font-size: 2rem;
 }
 
-.goals-item p, .interests-item p {
+.goals-item p,
+.interests-item p {
     margin-top: 15px;
     font-size: 1.1rem;
 }
@@ -342,4 +345,74 @@ body {
 .items-row img:hover {
     filter: grayscale(0%);
     transition: filter 0.2s ease;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    margin: 2rem;
+    justify-content: center;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.fly-hover:hover {
+    transform: translateY(-15px);
+    transition: ease .5s;
+}
+
+.fly-hover {
+    transition: ease .5s;
+}
+
+.project-item-img {
+    display: flex;
+    object-fit: cover;
+}
+
+.project-item-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: white;
+    background-color: #272933;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.tag {
+    color: white;
+    font-size: small;
+    padding: 8px 15px 8px 15px;
+    border-radius: 2rem;
+}
+
+.tag.tailwind {
+    background-color: #38ade2;
+}
+
+.tag.laravel {
+    background-color: #FF2D20;
+}
+
+.tag.livewire {
+    background-color: #FB70A9;
+}
+
+.tag.react {
+    background-color: #61DAFB;
+}
+
+.tag.inertia {
+    background-color: #7071ED;
 }
