@@ -50,6 +50,12 @@
     .items-row {
         margin-top: 4rem;
     }
+
+    .goals-item.active,
+    .interests-item.active {
+        flex-direction: column;
+    }
+
 }
 
 /* for desktop */
@@ -295,6 +301,7 @@ body {
     padding: 2rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 /* skills */
@@ -353,20 +360,22 @@ body {
     flex-direction: column;
     box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.5);
     text-decoration: none;
+    max-width: 410px;
 }
 
 .fly-hover:hover {
     transform: translateY(-15px);
-    transition: ease .5s;
+    transition: ease 0.5s;
 }
 
 .fly-hover {
-    transition: ease .5s;
+    transition: ease 0.5s;
 }
 
 .project-item-img {
     display: flex;
     object-fit: cover;
+    max-width: 420px;
 }
 
 .project-item-body {
@@ -396,17 +405,17 @@ body {
 }
 
 .tag.laravel {
-    background-color: #FF2D20;
+    background-color: #ff2d20;
 }
 
 .tag.livewire {
-    background-color: #FB70A9;
+    background-color: #fb70a9;
 }
 
 .tag.react {
-    background-color: #61DAFB;
+    background-color: #61dafb;
 }
 
 .tag.inertia {
-    background-color: #7071ED;
+    background-color: #7071ed;
 }

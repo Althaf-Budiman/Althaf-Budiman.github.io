@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
             <a href="${project.link}" target="_blank" class="project-item fly-hover">
                 <!-- img -->
                 <div class="project-item-img">
-                    <img src="assets/img/${project.img}" />
+                    <img src="assets/img/${project.img}" style="width: 100%;" />
                 </div>
 
                 <!-- body -->
