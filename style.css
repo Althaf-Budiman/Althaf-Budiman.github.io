@@ -2,7 +2,6 @@
 
 /* for mobile and tablet */
 @media only screen and (max-width: 1023px) {
-    /* hero */
     .hero {
         flex-direction: column;
         align-items: center;
@@ -20,28 +19,15 @@
         width: 20rem;
     }
 
-    /* about */
     .about {
         flex-direction: column;
         gap: 2rem;
     }
 
-    /* tabs */
     .tabs {
         flex-direction: column;
     }
 
-    /* skills */
-    .skills {
-        flex-direction: column;
-    }
-
-    .items-row,
-    .skills-item {
-        flex-wrap: wrap;
-    }
-
-    /* education item */
     .education-item {
         flex-direction: column;
         align-items: center;
@@ -55,6 +41,14 @@
     .divider {
         width: 5.5rem;
         height: 5px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .items-row {
+        margin-top: 4rem;
     }
 }
 
@@ -74,7 +68,6 @@
         width: 28rem;
     }
 
-    /* education item */
     .education-item {
         flex-direction: row;
         align-items: center;
@@ -87,6 +80,10 @@
     .divider {
         width: 5px;
         height: 5.5rem;
+    }
+
+    .skills {
+        flex-direction: row;
     }
 }
 
@@ -304,16 +301,11 @@ body {
 
 .skills {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-top: 8rem;
     font-size: 1.4rem;
     padding: 5rem;
     color: white;
-    max-width: 45%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 #skills-header {
@@ -331,10 +323,11 @@ body {
 }
 
 .items-row {
-    margin-top: 3rem;
+    max-width: 30rem;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 2.4rem;
+    gap: 2rem;
 }
 
 .items-row img {
