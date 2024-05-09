@@ -102,7 +102,7 @@
 }
 
 body {
-    background-image: url(assets/img/denim.png);
+    background-color: #1b1c1e;
     background-attachment: fixed;
 }
 
@@ -278,7 +278,7 @@ body {
 
 .goals-item,
 .interests-item {
-    background-color: #1b1c1e;
+    background-color: #272933;
     padding: 1.5rem;
     color: white;
     gap: 2.5rem;
