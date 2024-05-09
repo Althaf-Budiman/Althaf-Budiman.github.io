@@ -359,6 +359,7 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.5);
+    text-decoration: none;
 }
 
 .fly-hover:hover {
