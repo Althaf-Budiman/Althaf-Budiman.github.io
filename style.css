@@ -55,7 +55,6 @@
     .interests-item.active {
         flex-direction: column;
     }
-
 }
 
 /* for desktop */
@@ -148,6 +147,30 @@ body {
 
 .box-shadow-regular {
     box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.5); /* Bayangan hitam */
+}
+
+/* nav */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    padding: 1.2rem;
+    justify-content: center;
+    gap: 2rem;
+    transition: ease 0.5s;
+}
+
+.nav-scroll {
+    transition: ease 0.5s;
+    background-color: #1b1c1e;
+    box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    font-weight: 550;
+    color: white;
+    text-decoration: none;
 }
 
 /* Hero Section */
