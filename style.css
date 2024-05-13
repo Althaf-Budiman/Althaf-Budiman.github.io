@@ -378,6 +378,26 @@ nav a {
     justify-content: center;
 }
 
+.my-project {
+    color: white;
+    padding: 1rem;
+    width: 410px;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.my-project a {
+    text-decoration: none;
+}
+
+.my-project a div {
+    color: white;
+    font-size: 1rem;
+    width: fit-content;
+    margin-top: 50px;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+}
+
 .project-item {
     display: flex;
     flex-direction: column;
