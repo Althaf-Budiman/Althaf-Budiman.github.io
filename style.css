@@ -64,6 +64,10 @@
     .social-media {
         gap: 1.8rem;
     }
+
+    .header-content {
+        flex-direction: column;
+    }
 }
 
 /* for desktop */
@@ -101,6 +105,9 @@
     }
 
     footer {
+        flex-direction: row;
+    }
+    header-content {
         flex-direction: row;
     }
 }
@@ -171,6 +178,7 @@ nav {
     padding: 1.2rem;
     justify-content: center;
     gap: 2rem;
+    z-index: 50;
     transition: ease 0.5s;
 }
 
@@ -183,12 +191,12 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
     font-weight: 600;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 /* Hero Section */
@@ -556,12 +564,12 @@ footer div {
 footer a {
     color: white;
     text-decoration: none;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 footer a:hover {
     font-weight: 600;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 .social-media img {
@@ -572,4 +580,102 @@ footer a:hover {
 .social-media img:hover {
     filter: grayscale(0%);
     transition: filter 0.2s ease;
+}
+
+.experiences-container {
+    margin: auto;
+    padding: 2rem;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+.line {
+    position: absolute;
+    width: 4px;
+    background-color: #f39c12;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.section {
+    padding: 2rem 0;
+    position: relative;
+    width: 50%;
+    margin-bottom: 14rem;
+}
+
+.section:nth-child(odd) {
+    left: 0;
+}
+
+.section:nth-child(even) {
+    left: 50%;
+}
+
+.section .bead {
+    width: 20px;
+    height: 20px;
+    background-color: #f39c12;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    margin-left: -10px;
+}
+
+.section:nth-child(odd) .bead {
+    left: 100%;
+}
+
+.section .content {
+    padding: 1rem;
+    background-color: #393d47;
+    position: relative;
+    border-radius: 6px;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+}
+
+.section:nth-child(even) .content {
+    margin-left: -calc(100% + 20px);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-image img {
+    width: 60px;
+}
+
+.section .content h2 {
+    color: #f39c12;
+    margin-top: 0;
+}
+
+.section .content h3 {
+    color: #ecf0f1;
+}
+
+.section .content p {
+    color: white;
+    margin-top: 10px;
+}
+
+.year {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px #f39c12;
 }
