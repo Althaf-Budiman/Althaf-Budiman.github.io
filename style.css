@@ -405,14 +405,12 @@ nav a:hover {
 }
 
 .my-project a {
+    display: flex;
     text-decoration: none;
-}
-
-.my-project a div {
     color: white;
     font-size: 1rem;
-    width: fit-content;
     margin-top: 50px;
+    width: fit-content;
     padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
