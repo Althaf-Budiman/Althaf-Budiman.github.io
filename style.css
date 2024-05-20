@@ -199,6 +199,23 @@ nav a:hover {
     transition: 0.3s ease;
 }
 
+.introducing-text {
+    color: #ffb700;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 11rem;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 5px #ffb700, 0 0 10px #ffb700, 0 0 15px #ffb700, 0 0 20px #ffb700, 0 0 25px #ffb700, 0 0 30px #ffb700;
+    }
+    to {
+        text-shadow: 0 0 10px #ffb700, 0 0 20px #ffb700, 0 0 30px #ffb700, 0 0 40px #ffb700, 0 0 50px #ffb700, 0 0 60px #ffb700;
+    }
+}
+
 /* Hero Section */
 .hero {
     color: white;
@@ -236,7 +253,7 @@ nav a:hover {
 
 .about {
     margin: 2rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
