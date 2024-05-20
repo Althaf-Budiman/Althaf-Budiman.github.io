@@ -14,10 +14,21 @@
     </head>
     <body>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="experiences.html">Experiences</a>
+            <div class="logo">
+                <a href="index.html">Na<span class="color-yellow">B</span></a>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="experiences.html">Experiences</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
+
         <!-- Hero Section -->
         <div class="hero bg-blackGradient box-shadow-regular">
             <div>
@@ -27,6 +38,7 @@
 
                 <div class="hero-buttons">
                     <a href="#about" class="font-semibold bg-orangeGradient rounded-regular"> About Me </a>
+                    <a href="projects.html" class="bg-blackGradient font-semibold border-white"> My Projects </a>
                     <a href="experiences.html" class="border-white font-semibold"> My Experiences </a>
                 </div>
             </div>
@@ -35,8 +47,8 @@
         </div>
 
         <!-- About Section -->
-        <h1 class="introducing-text">Introducing</h1>
-        <div class="about" id="about">
+        <h1 class="introducing-text" id="about">Introducing</h1>
+        <div class="about">
             <div class="about-card box-shadow-regular bg-blackGradient rounded-regular">
                 <h2 class="color-yellow font-semibold">Nawfal Althaf Budiman</h2>
                 <p class="font-light">Web Developer Enthusiast</p>
@@ -169,7 +181,7 @@
             <div class="my-project rounded-regular bg-blackGradient box-shadow-regular fly-hover">
                 <p>MY</p>
                 <p class="color-yellow">PROJECTS</p>
-                <a href="projects.html" class="bg-orangeGradient rounded-regular"> See More </a>
+                <a href="projects.html" class="bg-orangeGradient rounded-regular" style="font-size: 1.2rem;"> See More </a>
             </div>
 
             <a href="https://github.com/Althaf-Budiman/Forum" target="_blank" class="project-item fly-hover">
@@ -333,7 +345,7 @@
         </footer>
 
         <script src="scripts/script.js"></script>
-        <script src="scripts/nav-scroll.js"></script>
+        <script src="scripts/nav.js"></script>
         <script src="scripts/auto-type-greeting.js"></script>
     </body>
 </html>

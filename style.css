@@ -68,6 +68,14 @@
     .header-content {
         flex-direction: column;
     }
+
+    .section {
+        width: 100%;
+    }
+
+    .header-content {
+        margin-bottom: 2rem;
+    }
 }
 
 /* for desktop */
@@ -110,12 +118,16 @@
     header-content {
         flex-direction: row;
     }
+
+    .section {
+        width: 50%;
+    }
 }
 
 * {
     padding: 0;
     margin: 0;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -176,7 +188,8 @@ nav {
     top: 0;
     display: flex;
     padding: 1.2rem;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 2rem;
     z-index: 50;
     transition: ease 0.5s;
@@ -199,6 +212,72 @@ nav a:hover {
     transition: 0.3s ease;
 }
 
+/* Logo styles */
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Menu styles */
+.menu {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Media queries for phones */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        background-color: #1b1c1e;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100vw;
+        padding: 1rem;
+    }
+
+    .menu.active a {
+        font-size: 2rem;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
 .introducing-text {
     color: #ffb700;
     text-align: center;
@@ -209,7 +288,7 @@ nav a:hover {
 
 @keyframes neon {
     from {
-        text-shadow: 0 0 5px #ffb700, 0 0 10px #ffb700, 0 0 15px #ffb700, 0 0 20px #ffb700, 0 0 25px #ffb700, 0 0 30px #ffb700;
+        text-shadow: 0 0 5px #ffb700, 0 0 10px #ffb700, 0 0 15px #ffb700;
     }
     to {
         text-shadow: 0 0 10px #ffb700, 0 0 20px #ffb700, 0 0 30px #ffb700, 0 0 40px #ffb700, 0 0 50px #ffb700, 0 0 60px #ffb700;
@@ -622,17 +701,9 @@ footer a:hover {
 
 .section {
     padding: 2rem 0;
+    margin: 0 auto; /* Mengatur margin atas dan bawah secara otomatis */
+    margin-bottom: 10rem;
     position: relative;
-    width: 50%;
-    margin-bottom: 14rem;
-}
-
-.section:nth-child(odd) {
-    left: 0;
-}
-
-.section:nth-child(even) {
-    left: 50%;
 }
 
 .section .bead {
@@ -644,17 +715,15 @@ footer a:hover {
     z-index: 10;
     position: absolute;
     top: 20px;
-    margin-left: -10px;
-}
-
-.section:nth-child(odd) .bead {
-    left: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .section .content {
     padding: 1rem;
     background-color: #393d47;
     position: relative;
+    margin-top: 5rem;
     border-radius: 6px;
     width: calc(100% - 40px);
     margin-left: 20px;
@@ -675,7 +744,7 @@ footer a:hover {
 }
 
 .section .content h2 {
-    color: #f39c12;
+    color: #ffb700;
     margin-top: 0;
 }
 
@@ -683,16 +752,11 @@ footer a:hover {
     color: #ecf0f1;
 }
 
-.section .content p {
-    color: white;
-    margin-top: 10px;
+.section .content h4 {
+    color: #f39c12;
 }
 
-.year {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 40px;
-    font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 2px #f39c12;
+.section .content p {
+    margin-top: 10px;
+    color: white;
 }

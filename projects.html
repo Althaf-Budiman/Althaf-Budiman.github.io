@@ -7,19 +7,27 @@
         <title>Projects | NAB</title>
         <link rel="stylesheet" href="style.css" />
 
-        <link rel="shortcut icon" href="assets/img/picture-of-althaf.svg" type="image/x-icon">
-
+        <link rel="shortcut icon" href="assets/img/picture-of-althaf.svg" type="image/x-icon" />
     </head>
     <body>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="experiences.html">Experiences</a>
+            <div class="logo">
+                <a href="index.html">Na<span class="color-yellow">B</span></a>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="experiences.html">Experiences</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <h1 style="margin: 5rem; color: white; margin-right: auto; margin-left: auto; width: fit-content; padding: 10px">Althaf's <span class="color-yellow">Projects</span></h1>
 
-        <div class="projects-container">
-        </div>
+        <div class="projects-container"></div>
 
         <footer class="bg-blackGradient" id="footer">
             <p>Copyright &copy; Nawfal Althaf Budiman</p>
@@ -30,18 +38,18 @@
             </div>
             <div class="social-media">
                 <a class="fly-hover" href="https://www.instagram.com/altop_7/" target="_blank">
-                    <img src="./assets/img/instagram.svg">
+                    <img src="./assets/img/instagram.svg" />
                 </a>
                 <a class="fly-hover" href="https://www.linkedin.com/in/althafbudiman/" target="_blank">
-                    <img src="./assets/img/linkedin.svg">
+                    <img src="./assets/img/linkedin.svg" />
                 </a>
                 <a class="fly-hover" href="https://github.com/Althaf-Budiman" target="_blank">
-                    <img src="./assets/img/github.svg">
+                    <img src="./assets/img/github.svg" />
                 </a>
             </div>
         </footer>
 
-        <script  src="scripts/projects-page.js"></script>
-        <script src="scripts/nav-scroll.js"></script>
+        <script src="scripts/projects-page.js"></script>
+        <script src="scripts/nav.js"></script>
     </body>
 </html>
