@@ -49,6 +49,8 @@ window.addEventListener('load', () => {
     projects.forEach(project => {
         const projectItem = document.createElement('div')
         projectItem.classList.add('project-item')
+        projectItem.setAttribute('data-aos', 'zoom-in')
+        projectItem.setAttribute('data-aos-duration', '1100')
 
         const itemContent = `
             <a href="${project.link}" target="_blank" class="project-item fly-hover">
@@ -73,5 +75,4 @@ window.addEventListener('load', () => {
         projectItem.innerHTML = itemContent
         container.appendChild(projectItem)
     })
-
 })

@@ -11,6 +11,8 @@
         <!-- ENd Link css -->
 
         <link rel="shortcut icon" href="assets/img/picture-of-althaf.svg" type="image/x-icon" />
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     </head>
     <body>
         <nav>
@@ -32,42 +34,42 @@
         <!-- Hero Section -->
         <div class="hero bg-blackGradient box-shadow-regular">
             <div>
-                <h1 class="color-yellow" id="hello" style="min-height: 112px"></h1>
-                <h1>Welcome To</h1>
-                <h1><span class="color-yellow">Althaf's</span> Website.</h1>
+                <h1 data-aos="fade-right" data-aos-duration="1000" class="color-yellow" id="hello" style="min-height: 112px"></h1>
+                <h1 data-aos="fade-right" data-aos-duration="1500">Welcome To</h1>
+                <h1 data-aos="fade-right" data-aos-duration="2000"><span class="color-yellow">Althaf's</span> Website.</h1>
 
                 <div class="hero-buttons">
-                    <a href="#about" class="font-semibold bg-orangeGradient rounded-regular"> About Me </a>
-                    <a href="projects.html" class="bg-blackGradient font-semibold border-white"> My Projects </a>
-                    <a href="experiences.html" class="border-white font-semibold"> My Experiences </a>
+                    <a data-aos="zoom-in" data-aos-duration="1000" href="#about" class="font-semibold bg-orangeGradient rounded-more"> About Me </a>
+                    <a data-aos="zoom-in" data-aos-duration="1500" href="projects.html" class="bg-yellow font-semibold rounded-regular"> My Projects </a>
+                    <a data-aos="zoom-in" data-aos-duration="2000" href="experiences.html" class="border-white font-semibold"> My Experiences </a>
                 </div>
             </div>
 
-            <img src="assets/img/altaf.svg" />
+            <img data-aos="fade-left" src="assets/img/altaf.svg" />
         </div>
 
         <!-- About Section -->
-        <h1 class="introducing-text" id="about">Introducing</h1>
+        <h1 data-aos="zoom-out" class="introducing-text" id="about">Introducing</h1>
         <div class="about">
-            <div class="about-card box-shadow-regular bg-blackGradient rounded-regular">
+            <div data-aos="flip-down" class="about-card box-shadow-regular bg-blackGradient rounded-regular">
                 <h2 class="color-yellow font-semibold">Nawfal Althaf Budiman</h2>
                 <p class="font-light">Web Developer Enthusiast</p>
                 <p>
-                    "I am a web developer certified by Dicoding's Web Programming course, proficient in HTML, CSS, JavaScript, React, TailwindCSS, Laravel, Livewire, and MySQL. I am always working hard to upgrade my skills and become a
-                    better version of myself."
+                    "I am a <span class="color-yellow">Web Developer</span> certified by Dicoding's Web Programming course, proficient in HTML, CSS, JavaScript, <span class="color-yellow">React</span>, TailwindCSS,
+                    <span class="color-yellow">Laravel</span>, Livewire, and MySQL. I am always <span class="color-yellow">working hard</span> to upgrade my skills and become a better version of myself."
                 </p>
             </div>
 
-            <div>
+            <div data-aos="flip-up">
                 <img src="assets/img/picture-of-althaf.svg" />
             </div>
         </div>
 
         <!-- tabs section -->
         <div class="tabs" id="tabs">
-            <div class="tab bg-orange border-white font-semibold rounded-more" id="tab-education" onclick="changeTab('education')">Education</div>
-            <div class="tab border-white font-semibold rounded-more" id="tab-goals" onclick="changeTab('goals')">Goals</div>
-            <div class="tab border-white font-semibold rounded-more" id="tab-interests" onclick="changeTab('interests')">Interests</div>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="tab bg-orange border-white font-semibold rounded-more" id="tab-education" onclick="changeTab('education')">Education</div>
+            <div data-aos="zoom-in" data-aos-duration="1500" class="tab border-white font-semibold rounded-more" id="tab-goals" onclick="changeTab('goals')">Goals</div>
+            <div data-aos="zoom-in" data-aos-duration="2000" class="tab border-white font-semibold rounded-more" id="tab-interests" onclick="changeTab('interests')">Interests</div>
         </div>
 
         <!-- tabs container section -->
@@ -155,36 +157,36 @@
         <!-- Skills Section -->
         <div class="skills bg-blackGradient box-shadow-regular" id="skills">
             <div id="skills-header" class="font-semibold">
-                <h2>Some <span class="color-yellow">technology</span> that</h2>
-                <h2>i use for</h2>
-                <h2 class="color-yellow">Web Development</h2>
+                <h2 data-aos="fade-right" data-aos-duration="1000">Some <span class="color-yellow">technology</span> that</h2>
+                <h2 data-aos="fade-left" data-aos-duration="1500">i use for</h2>
+                <h2 data-aos="fade-right" data-aos-duration="2000" class="color-yellow">Web Development</h2>
 
-                <a href="#projects" class="border-white"> My Projects </a>
+                <a data-aos="fade-left" data-aos-duration="2000" href="#projects" class="border-white"> My Projects </a>
             </div>
 
             <div class="items-row">
-                <img src="assets/img/react.svg" />
-                <img src="assets/img/inertia.svg" />
-                <img src="assets/img/laravel.svg" />
-                <img src="assets/img/mysql.svg" />
-                <img src="assets/img/php.svg" />
-                <img src="assets/img/tailwind.svg" />
-                <img src="assets/img/html.svg" />
-                <img src="assets/img/css.svg" />
-                <img src="assets/img/js.svg" />
-                <img src="assets/img/livewire.svg" />
+                <img data-aos="zoom-in" src="assets/img/react.svg" title="ReactJS" />
+                <img data-aos="zoom-in" src="assets/img/inertia.svg" title="InertiaJS" />
+                <img data-aos="zoom-in" src="assets/img/laravel.svg" title="Laravel" />
+                <img data-aos="zoom-in" src="assets/img/mysql.svg" title="MySQL" />
+                <img data-aos="zoom-in" src="assets/img/php.svg" title="PHP" />
+                <img data-aos="zoom-in" src="assets/img/tailwind.svg" title="TailwindCSS" />
+                <img data-aos="zoom-in" src="assets/img/html.svg" title="HTML" />
+                <img data-aos="zoom-in" src="assets/img/css.svg" title="CSS" />
+                <img data-aos="zoom-in" src="assets/img/js.svg" title="Javascript" />
+                <img data-aos="zoom-in" src="assets/img/livewire.svg" title="Laravel Livewire" />
             </div>
         </div>
 
         <!-- Projects Section -->
         <div class="projects-container" style="margin-top: 10rem" id="projects">
-            <div class="my-project rounded-regular bg-blackGradient box-shadow-regular fly-hover">
+            <div data-aos="zoom-in" data-aos-duration="1100" class="my-project rounded-regular bg-blackGradient box-shadow-regular fly-hover">
                 <p>MY</p>
                 <p class="color-yellow">PROJECTS</p>
-                <a href="projects.html" class="bg-orangeGradient rounded-regular" style="font-size: 1.2rem;"> See More </a>
+                <a href="projects.html" class="bg-orangeGradient rounded-regular" style="font-size: 1.2rem"> See More </a>
             </div>
 
-            <a href="https://github.com/Althaf-Budiman/Forum" target="_blank" class="project-item fly-hover">
+            <a data-aos="zoom-in" data-aos-duration="1100" href="https://github.com/Althaf-Budiman/Forum" target="_blank" class="project-item fly-hover">
                 <!-- img -->
                 <div class="project-item-img">
                     <img src="assets/img/forum-web.png" style="width: 100%" />
@@ -205,7 +207,7 @@
             </a>
         </div>
         <div class="projects-container">
-            <a href="https://github.com/Althaf-Budiman/atop-clean" target="_blank" class="project-item fly-hover">
+            <a data-aos="zoom-in" data-aos-duration="1100" href="https://github.com/Althaf-Budiman/atop-clean" target="_blank" class="project-item fly-hover">
                 <!-- img -->
                 <div class="project-item-img">
                     <img src="assets/img/atopClean-web.png" style="width: 100%" />
@@ -226,7 +228,7 @@
                 </div>
             </a>
 
-            <a href="https://github.com/maazshakeel/devdynasty_project" target="_blank" class="project-item fly-hover">
+            <a data-aos="zoom-in" data-aos-duration="1100" href="https://github.com/maazshakeel/devdynasty_project" target="_blank" class="project-item fly-hover">
                 <!-- img -->
                 <div class="project-item-img">
                     <img src="assets/img/museumJawa-web.png" style="width: 100%" />
@@ -248,13 +250,13 @@
 
         <!-- Certificates Section -->
         <div class="certificates" id="certificates">
-            <div class="my-certificates">
+            <div data-aos="zoom-in" class="my-certificates">
                 <p style="color: white" class="bg-blackGradient rounded-regular box-shadow-regular">MY <span class="color-yellow">CERTIFICATES</span></p>
             </div>
 
             <div class="certificate-items-container">
                 <!-- Certificate item -->
-                <div class="certificate-item fly-hover rounded-regular bg-blackGradient box-shadow-regular">
+                <div data-aos="fade-up" data-aos-duration="1200" class="certificate-item fly-hover rounded-regular bg-blackGradient box-shadow-regular">
                     <img src="./assets/img/dicoding-circle.svg" title="Dicoding" />
                     <h3 class="font-semibold">Belajar Membuat Aplikasi Web Dengan React</h3>
                     <div class="certificate-skills">
@@ -267,7 +269,7 @@
                         <p>Show Certificate</p>
                     </a>
                 </div>
-                <div class="certificate-item fly-hover rounded-regular bg-blackGradient box-shadow-regular">
+                <div data-aos="fade-down" data-aos-duration="1200" class="certificate-item fly-hover rounded-regular bg-blackGradient box-shadow-regular">
                     <img src="./assets/img/dicoding-circle.svg" title="Dicoding" />
                     <h3 class="font-semibold">Memulai Pemrograman Dengan Javascript</h3>
                     <div class="certificate-skills">
@@ -279,7 +281,7 @@
                         <p>Show Certificate</p>
                     </a>
                 </div>
-                <div class="certificate-item fly-hover rounded-regular bg-blackGradient box-shadow-regular">
+                <div data-aos="fade-up" data-aos-duration="1200" class="certificate-item fly-hover rounded-regular bg-blackGradient box-shadow-regular">
                     <img src="./assets/img/dicoding-circle.svg" title="Dicoding" />
                     <h3 class="font-semibold">Memulai Pemrograman Dengan Kotlin</h3>
                     <div class="certificate-skills">
@@ -291,7 +293,7 @@
                         <p>Show Certificate</p>
                     </a>
                 </div>
-                <div class="certificate-item fly-hover rounded-regular bg-blackGradient box-shadow-regular">
+                <div data-aos="fade-down" data-aos-duration="1200" class="certificate-item fly-hover rounded-regular bg-blackGradient box-shadow-regular">
                     <img src="./assets/img/dicoding-circle.svg" title="Dicoding" />
                     <h3 class="font-semibold">Belajar Dasar Pemrograman Web</h3>
                     <div class="certificate-skills">
@@ -306,7 +308,7 @@
                         <p>Show Certificate</p>
                     </a>
                 </div>
-                <div class="certificate-item fly-hover rounded-regular bg-blackGradient box-shadow-regular">
+                <div data-aos="fade-up" data-aos-duration="1200" class="certificate-item fly-hover rounded-regular bg-blackGradient box-shadow-regular">
                     <img src="./assets/img/dicoding-circle.svg" title="Dicoding" />
                     <h3 class="font-semibold">Belajar Membuat Front End Web Untuk Pemula</h3>
                     <div class="certificate-skills">
@@ -347,5 +349,9 @@
         <script src="scripts/script.js"></script>
         <script src="scripts/nav.js"></script>
         <script src="scripts/auto-type-greeting.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

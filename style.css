@@ -135,6 +135,7 @@
 body {
     background-color: #1b1c1e;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .color-yellow {
@@ -147,6 +148,10 @@ body {
 
 .bg-orange {
     background-color: #ff5c00;
+}
+
+.bg-yellow {
+    background-color: #ffb700;
 }
 
 .bg-blackGradient {
@@ -375,7 +380,7 @@ nav a:hover {
 .tab:hover {
     cursor: pointer;
     background-color: #ff5c00;
-    transition: all 0.2s;
+    transition: all 0.2s !important; 
 }
 
 .tab {
@@ -384,7 +389,7 @@ nav a:hover {
     text-align: center;
     color: white;
     font-size: 1.3rem;
-    transition: all 0.2s;
+    transition: all 0.2s !important;
 }
 
 .tab-content {
@@ -484,12 +489,12 @@ nav a:hover {
 
 .items-row img {
     filter: grayscale(100%);
-    transition: filter 0.2s ease;
+    transition: filter 0.2s ease !important;
 }
 
 .items-row img:hover {
     filter: grayscale(0%);
-    transition: filter 0.2s ease;
+    transition: filter 0.2s ease !important;
 }
 
 .projects-container {
@@ -527,12 +532,12 @@ nav a:hover {
 }
 
 .fly-hover:hover {
-    transform: translateY(-5px);
-    transition: ease 0.5s;
+    transform: translateY(-5px) !important;
+    transition: ease 0.5s !important;
 }
 
 .fly-hover {
-    transition: ease 0.5s;
+    transition: ease 0.5s !important;
 }
 
 .project-item-img {

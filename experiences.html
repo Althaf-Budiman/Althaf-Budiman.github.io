@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="style.css" />
 
         <link rel="shortcut icon" href="assets/img/picture-of-althaf.svg" type="image/x-icon" />
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     </head>
     <body>
         <nav>
@@ -34,7 +36,7 @@
                 <div class="line"></div>
                 <div class="section">
                     <div class="bead"></div>
-                    <div class="content">
+                    <div data-aos="fade-left" class="content">
                         <div class="header-content">
                             <div class="header-image">
                                 <img src="assets/img/andalus-logo.svg">
@@ -52,7 +54,7 @@
                 </div>
                 <div class="section">
                     <div class="bead"></div>
-                    <div class="content">
+                    <div data-aos="fade-right" class="content">
                         <div class="header-content">
                             <div class="header-image">
                                 <img src="assets/img/haraki-logo.svg">
@@ -70,7 +72,7 @@
                 </div>
                 <div class="section">
                     <div class="bead"></div>
-                    <div class="content">
+                    <div data-aos="fade-left" class="content">
                         <div class="header-content">
                             <div class="header-image">
                                 <img src="assets/img/idn-logo.svg">
@@ -110,5 +112,9 @@
         </footer>
 
         <script src="scripts/nav.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
