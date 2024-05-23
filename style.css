@@ -150,6 +150,14 @@ body {
     background-color: #ff5c00;
 }
 
+.bg-projectsBtn {
+    background-color: #ff8c00;
+}
+
+.bg-experiencesBtn {
+    background-color: #ffb700;
+}
+
 .bg-yellow {
     background-color: #ffb700;
 }
@@ -380,7 +388,7 @@ nav a:hover {
 .tab:hover {
     cursor: pointer;
     background-color: #ff5c00;
-    transition: all 0.2s !important; 
+    transition: all 0.2s !important;
 }
 
 .tab {
@@ -489,7 +497,7 @@ nav a:hover {
 
 .items-row img:hover {
     transform: translateY(-5px) !important;
-    transition:  0.2s ease !important;
+    transition: 0.2s ease !important;
 }
 
 .projects-container {
