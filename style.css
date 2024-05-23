@@ -487,14 +487,9 @@ nav a:hover {
     gap: 2rem;
 }
 
-.items-row img {
-    filter: grayscale(100%);
-    transition: filter 0.2s ease !important;
-}
-
 .items-row img:hover {
-    filter: grayscale(0%);
-    transition: filter 0.2s ease !important;
+    transform: translateY(-5px) !important;
+    transition:  0.2s ease !important;
 }
 
 .projects-container {
@@ -671,16 +666,6 @@ footer a {
 footer a:hover {
     font-weight: 600;
     transition: 0.3s ease;
-}
-
-.social-media img {
-    filter: grayscale(100%);
-    transition: filter 0.2s ease;
-}
-
-.social-media img:hover {
-    filter: grayscale(0%);
-    transition: filter 0.2s ease;
 }
 
 .experiences-container {
